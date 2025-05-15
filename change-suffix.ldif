@@ -1,0 +1,10 @@
+dn: olcDatabase={1}mdb,cn=config
+changeType: modify
+replace: olcSuffix
+olcSuffix: dc=stage,dc=lan
+-
+replace: olcRootDN
+olcRootDN: cn=admin,dc=stage,dc=lan
+-
+replace: olcRootPW
+olcRootPW: {SSHA}SRojl1vDKezxBixzJlZe5J6FMTTV13vw

@@ -1,0 +1,31 @@
+dn: dc=stage,dc=lan
+objectClass: dcObject
+objectClass: organization
+dc: stage
+o: stage
+
+dn: ou=utilisateurs,dc=stage,dc=lan
+objectClass: organizationalUnit
+ou: utilisateurs
+
+dn: ou=groupes,dc=stage,dc=lan
+objectClass: organizationalUnit
+ou: groupes
+
+dn: cn=info,ou=groupes,dc=stage,dc=lan
+objectClass: posixGroup
+objectClass: top
+cn: info
+gidNumber: 5000
+
+dn: uid=bob,ou=utilisateurs,dc=stage,dc=lan
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: bob
+uid: bob
+uidNumber: 2000
+gidNumber: 5000
+homeDirectory: /home/bob
+loginShell: /bin/bash
+userPassword: {SSHA}ipiOfk+5z0ixSfXuZCZmtGALkRAJQhu7
